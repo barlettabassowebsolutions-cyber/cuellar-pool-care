@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuellar Pool Care | Pool service in Mattituck, NY</title>
+<meta name="description" content="Pool openings, weekly service, and closings in Mattituck and the North Fork. Request a quote from Cuellar Pool Care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#0B3142;
+  --tile:#147A93;
+  --water:#7FD3E0;
+  --foam:#F4FAFB;
+  --buoy:#F5B301;
+  --ink:#0E2530;
+  --muted:#48606b;
+  --display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Figtree","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--foam)}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--buoy);outline-offset:3px}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+
+/* Header */
+.site-header{background:var(--deep);color:var(--foam)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1rem;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:800;font-size:1.25rem;text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+.nav a{text-decoration:none;font-weight:500}
+.nav a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* Buttons */
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:6px;background:var(--buoy);color:var(--ink);font-weight:600;text-decoration:none;border:2px solid var(--buoy);cursor:pointer;font:inherit;font-weight:600}
+.btn:hover{background:#ffc623;border-color:#ffc623}
+.btn.ghost{background:transparent;color:var(--foam);border-color:var(--water)}
+.btn.ghost:hover{background:rgba(127,211,224,.15)}
+.btn.small{padding:.5rem 1rem}
+
+/* Hero */
+.hero{position:relative;background:var(--deep);color:var(--foam);overflow:hidden;isolation:isolate}
+.hero-water{position:absolute;inset:0;background:linear-gradient(180deg,#106b83 0%,var(--tile) 100%);z-index:-1;clip-path:inset(0 0 0 0);animation:rise 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+.hero .wrap{padding-block:clamp(3.5rem,9vw,7rem) clamp(3rem,7vw,5rem)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7.5vw,5.25rem);line-height:1;letter-spacing:-.03em;margin:0 0 1.25rem;max-width:12ch}
+.hero p{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:34rem;margin:0 0 2rem}
+.hero .actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.tile-band{height:56px;background-color:var(--tile);background-image:linear-gradient(var(--deep) 2px,transparent 2px),linear-gradient(90deg,var(--deep) 2px,transparent 2px);background-size:28px 28px;border-top:4px solid var(--water)}
+
+/* Sections */
+section{padding-block:clamp(3rem,7vw,5.5rem)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,4.5vw,2.9rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 1rem}
+.lede{color:var(--muted);max-width:38rem;margin:0 0 2.5rem}
+
+/* Services */
+.services{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.services li{display:grid;grid-template-columns:auto 1fr;gap:0 1.25rem;padding-block:1.4rem;border-top:2px solid var(--water)}
+.services li:last-child{border-bottom:2px solid var(--water)}
+.services .chip{width:22px;height:22px;background:var(--tile);margin-top:.35rem;border-radius:2px}
+.services h3{font-family:var(--display);font-size:1.4rem;margin:0 0 .25rem;font-weight:700}
+.services p{margin:0;color:var(--muted);max-width:44rem}
+
+/* Season */
+.season{background:var(--deep);color:var(--foam)}
+.season .lede{color:#b9d4dc}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.steps li{border-left:6px solid var(--water);padding-left:1.25rem}
+.steps .when{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--water);margin:0 0 .25rem}
+.steps h3{font-family:var(--display);font-size:1.6rem;margin:0 0 .5rem}
+.steps p{margin:0;color:#dbeaee}
+.note{margin-top:2rem;color:#b9d4dc;font-size:.95rem}
+
+/* Contact */
+.contact-grid{display:grid;gap:3rem;grid-template-columns:1fr}
+@media(min-width:860px){.contact-grid{grid-template-columns:5fr 6fr}}
+address{font-style:normal;font-size:1.15rem;line-height:1.5}
+form{display:grid;gap:1.1rem}
+label{display:grid;gap:.35rem;font-weight:600}
+input,select,textarea{font:inherit;padding:.7rem .8rem;border:2px solid #9bb6bf;border-radius:6px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--tile)}
+textarea{min-height:7rem;resize:vertical}
+.hp{position:absolute;left:-9999px}
+
+/* Footer */
+footer{background:var(--deep);color:#b9d4dc;padding-block:2rem;font-size:.95rem}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-water{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Cuellar Pool Care</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#season">Pool season</a>
+      <a class="btn small" href="#contact">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-water" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Clear water all season.</h1>
+      <p>Pool openings, weekly service, and closings for Mattituck and the North Fork. Balanced chemistry, working equipment, and a pool that's ready when you are.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Request a quote</a>
+        <a class="btn ghost" href="#season">See the season plan</a>
+      </div>
+    </div>
+  </div>
+  <div class="tile-band" aria-hidden="true"></div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we take care of</h2>
+      <p class="lede">Tell us what your pool needs. We'll quote the work, not a package you don't use.</p>
+      <ul class="services">
+        <li><span class="chip" aria-hidden="true"></span><div><h3>Pool openings</h3><p>Cover removal, startup, first water test, and balancing so the pool is safe to swim in.</p></div></li>
+        <li><span class="chip" aria-hidden="true"></span><div><h3>Weekly service</h3><p>Water testing, chemical balancing, skimming, brushing, and filter checks on a regular schedule.</p></div></li>
+        <li><span class="chip" aria-hidden="true"></span><div><h3>Pool closings</h3><p>Lines cleared, water balanced, and the pool covered for the off-season.</p></div></li>
+        <li><span class="chip" aria-hidden="true"></span><div><h3>Equipment repair</h3><p>Pumps, filters, heaters, and timers diagnosed and fixed.</p></div></li>
+        <li><span class="chip" aria-hidden="true"></span><div><h3>Green pool recovery</h3><p>Cloudy or green water cleared and brought back to balance.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="season" class="season">
+    <div class="wrap">
+      <h2>A pool season, start to finish</h2>
+      <p class="lede">Most North Fork pools follow the same three stages each year.</p>
+      <ol class="steps">
+        <li><p class="when">Spring</p><h3>Opening</h3><p>We open the pool, start the equipment, and balance the water before the first swim.</p></li>
+        <li><p class="when">Summer</p><h3>Weekly service</h3><p>Regular visits keep the water clear and the equipment running through the swim season.</p></li>
+        <li><p class="when">Fall</p><h3>Closing</h3><p>We winterize the pool so it comes through the cold months in good shape.</p></li>
+      </ol>
+      <p class="note">Exact dates depend on the weather and your pool.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Request a quote</h2>
+        <p class="lede">Send us a few details about your pool and we'll get back to you.</p>
+        <address>
+          Cuellar Pool Care<br>
+          4500 Deep Hole Dr<br>
+          Mattituck, NY 11952
+        </address>
+      </div>
+      <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <label>Name <input type="text" name="name" autocomplete="name" required></label>
+        <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Pool type
+          <select name="pool_type">
+            <option>In-ground</option>
+            <option>Above-ground</option>
+            <option>Not sure</option>
+          </select>
+        </label>
+        <label>What do you need? <textarea name="message" placeholder="Opening, weekly service, a repair..."></textarea></label>
+        <button class="btn" type="submit">Send request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Cuellar Pool Care &middot; 4500 Deep Hole Dr, Mattituck, NY 11952</div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
